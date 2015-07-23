@@ -1,7 +1,7 @@
 {
   "name": "html-inlinify",
   "version": "0.0.0",
-  "description": "",
+  "description": "Inline html in a browserify bundle.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
