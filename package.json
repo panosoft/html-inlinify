@@ -2,7 +2,8 @@
   "name": "html-inlinify",
   "version": "0.0.0",
   "description": "Inline html in a browserify bundle.",
-  "main": "index.js",
+  "repository": "panosoft/html-inlinify",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
