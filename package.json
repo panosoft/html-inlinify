@@ -1,6 +1,6 @@
 {
   "name": "html-inlinify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Inline html in a browserify bundle.",
   "repository": "panosoft/html-inlinify",
   "main": "lib/index.js",
