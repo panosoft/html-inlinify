@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inline-html": "^0.0.1",
+    "inline-html": "^0.1.0",
     "js-string-escape": "^1.0.0",
     "lodash": "^3.10.0",
     "static-module": "^1.1.3",
