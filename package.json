@@ -1,14 +1,15 @@
 {
   "name": "html-inlinify",
   "version": "0.1.0",
-  "description": "Inline html in a browserify bundle.",
+  "description": "Inline local assets referenced in an HTML document.",
+  "keywords": ["browserify-transform"],
   "repository": "panosoft/html-inlinify",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "inline-html": "^0.1.0",
     "js-string-escape": "^1.0.0",
