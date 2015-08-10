@@ -1,6 +1,6 @@
 {
   "name": "html-inlinify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Inline local assets referenced in an HTML document.",
   "keywords": [
     "browserify-transform"
