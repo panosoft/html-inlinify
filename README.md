@@ -37,7 +37,7 @@ browserify -t hmtl-inlinify index.js > bundle.js
 To create the following `bundle.js`:
 
 ```js
-Promise.resolve('... html string with assets embedded>').then(function (html) {
+Promise.resolve('... html string with assets embedded ...').then(function (html) {
   // ...
 });
 ```
