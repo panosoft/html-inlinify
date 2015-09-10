@@ -1,6 +1,6 @@
 # html-inlinify
 
-Inline local assets referenced in an HTML document.
+Embed local assets in an HTML document with browserify.
 
 [![npm version](https://img.shields.io/npm/v/html-inlinify.svg)](https://www.npmjs.com/package/html-inlinify)
 [![npm license](https://img.shields.io/npm/l/html-inlinify.svg)](https://www.npmjs.com/package/html-inlinify)
