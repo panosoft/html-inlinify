@@ -1,6 +1,6 @@
 {
   "name": "html-inlinify",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Embed local assets in an HTML document with browserify.",
   "keywords": [
     "browserify-transform"
