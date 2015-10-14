@@ -1,4 +1,5 @@
 var Browserify = require('browserify');
+var co = require('co');
 var expect = require('chai')
 	.use(require('chai-as-promised'))
 	.expect;
@@ -7,7 +8,7 @@ var fs = require('fs');
 var path = require('path');
 var requireString = require('@panosoft/require-string');
 
-var bundle = function (filename) {
+var bundleModule = function (filename) {
 	return new Promise(function (resolve, reject) {
 		Browserify({standalone: 'test'})
 			.transform(htmlInlinify)
@@ -20,13 +21,13 @@ var bundle = function (filename) {
 };
 
 describe('htmlInlinify', function () {
-	it('statically evaluate inline-html calls', function () {
+	it('statically evaluate inline-html calls', () => co(function * () {
 		var entry = path.resolve(__dirname, 'fixtures/index.js');
-		var html = fs.readFileSync(path.resolve(__dirname, 'fixtures/index.html'), 'utf8');
-		return bundle(entry)
-			.then(function (bundle) {
-				var exports = requireString(bundle);
-				return expect(exports()).to.eventually.equal(html);
-			});
-	});
+		var fileHtml = fs.readFileSync(path.resolve(__dirname, 'fixtures/index.html'), 'utf8');
+		var bundle = yield bundleModule(entry);
+		var moduleExports = requireString(bundle);
+		moduleExports = yield moduleExports();
+		expect(moduleExports).to.have.property('file').that.equals(fileHtml);
+		expect(moduleExports).to.have.property('html').that.equals('HTML');
+	}));
 });

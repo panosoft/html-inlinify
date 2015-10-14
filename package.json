@@ -13,7 +13,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "inline-html": "^0.1.0",
+    "inline-html": "^0.2.0",
     "js-string-escape": "^1.0.0",
     "ramda": "^0.17.1",
     "static-module": "^1.1.3",
