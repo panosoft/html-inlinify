@@ -31,7 +31,7 @@ inlineHtml('./index.html').then(function (html) {
 We can use browserify with the addition of this transform:
 
 ```sh
-browserify -t hmtl-inlinify index.js > bundle.js
+browserify -t html-inlinify index.js > bundle.js
 ```
 
 To create the following `bundle.js`:
